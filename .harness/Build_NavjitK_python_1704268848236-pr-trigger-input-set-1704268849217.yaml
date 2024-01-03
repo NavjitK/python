@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_NavjitK_python_1704268848236-pr-trigger-input-set
+  identifier: Build_NavjitK_python_1704268848236prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_NavjitK_python_1704268848236
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
