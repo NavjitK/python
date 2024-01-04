@@ -3,6 +3,8 @@ FROM python
 
 # RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools wheel
+RUN ls
+RUN pwd
 COPY ./wheeldir /opt/app/wheeldir
 # These are copied and installed first in order to take maximum advantage
 # of Docker layer caching (if enabled).
