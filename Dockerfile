@@ -1,7 +1,7 @@
 # FROM python:3.5.1-alpine
 FROM python
 
-RUN python install --upgrade pip
+RUN python.exe install --upgrade pip
 RUN pip install --upgrade setuptools wheel
 COPY wheeldir /opt/app/wheeldir
 # These are copied and installed first in order to take maximum advantage
