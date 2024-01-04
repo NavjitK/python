@@ -21,6 +21,7 @@ pipeline:
                   identifier: dockerbuild
                   name: docker_build
                   spec:
+                    connectorRef: docker
                     image: plugins/docker
                     settings:
                       dry_run: "true"
