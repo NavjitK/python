@@ -2,7 +2,7 @@
 FROM python
 
 # RUN pip install --upgrade pip
-RUN pip install --upgrade setuptools wheel
+RUN python.exe pip -m install --upgrade setuptools wheel
 RUN ls
 RUN pwd
 WORKDIR /opt/app
