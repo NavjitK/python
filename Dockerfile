@@ -6,7 +6,7 @@ RUN pip install --upgrade setuptools wheel
 RUN ls
 RUN pwd
 WORKDIR /opt/app
-COPY ./wheeldir /opt/app/wheeldir
+COPY wheeldir /opt/app/wheeldir
 # These are copied and installed first in order to take maximum advantage
 # of Docker layer caching (if enabled).
 COPY *requirements.txt /opt/app/src/
